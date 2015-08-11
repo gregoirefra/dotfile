@@ -1,6 +1,9 @@
 ZSH=$HOME/.oh-my-zsh
 
 export LC_ALL="en_US.UTF-8"
+export EDITOR=vim
+
+source ~/.bin/tmuxinator.zsh
 
 ZSH_THEME="agnoster"
 alias tmux="TERM=screen-256color-bce tmux"
