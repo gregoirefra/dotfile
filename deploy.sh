@@ -26,7 +26,15 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
 fi
 vim +BundleInstall +qall
 
+
 git config --global user.name "Francis Grégoire"
 git config --global user.email "gregoire.francis@gmail.com"
+
+#adding brew and powerline if on my mac
+if [ uname -a | grep MacBook]; then
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew install python
+  pip install --user powerline-status
+fi
 
 zsh
