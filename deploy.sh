@@ -34,6 +34,7 @@ git config --global user.email "gregoire.francis@gmail.com"
 if [ uname -a | grep MacBook]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install python
+  brew install tmux
   pip install --user powerline-status
 fi
 
