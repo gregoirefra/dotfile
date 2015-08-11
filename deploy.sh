@@ -2,6 +2,7 @@
 
 set -e
 export LC_ALL="en_US.UTF-8"
+export EDITOR=vim
 
 if [ ! -d ~/.oh-my-zsh ]; then
     git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
@@ -36,6 +37,7 @@ if [ uname -a | grep MacBook]; then
   brew install python
   brew install tmux
   pip install --user powerline-status
+  sudo gem install tmuxinator
 fi
 
 zsh
