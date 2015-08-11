@@ -38,6 +38,7 @@ if [ uname -a | grep MacBook]; then
   brew install tmux
   pip install --user powerline-status
   sudo gem install tmuxinator
+  pip install fabric
 fi
 
 zsh
