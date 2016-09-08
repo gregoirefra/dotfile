@@ -2,7 +2,7 @@
 
 set -e
 export LC_ALL="en_US.UTF-8"
-export EDITOR=vim
+export EDITOR=atom
 
 if [ ! -d ~/.oh-my-zsh ]; then
     git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
@@ -22,23 +22,7 @@ do
     fi
 done
 
-if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
-    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-fi
-vim +BundleInstall +qall
-
-
 git config --global user.name "Francis Grégoire"
 git config --global user.email "gregoire.francis@gmail.com"
-
-#adding brew and powerline if on my mac
-if [ uname -a | grep MacBook]; then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew install python
-  brew install tmux
-  pip install --user powerline-status
-  sudo gem install tmuxinator
-  pip install fabric
-fi
 
 zsh
