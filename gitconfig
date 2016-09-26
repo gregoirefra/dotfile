@@ -11,7 +11,7 @@
 	ui = true
 [core]
 	excludesfile = /Users/francis/.gitignore
-	editor = vim
+	editor = atom
 	autocrlf = input
 [apply]
 	whitespace = nowarn
