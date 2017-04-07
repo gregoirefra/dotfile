@@ -10,8 +10,8 @@
 	branch = auto
 	ui = true
 [core]
-	excludesfile = /Users/francis/.gitignore
-	editor = atom
+	excludesfile = ~/.gitignore
+	editor = vim
 	autocrlf = input
 [apply]
 	whitespace = nowarn
@@ -20,4 +20,4 @@
 [push]
 	default = matching
 [pull]
-	rebase = true
+	rebase = false
